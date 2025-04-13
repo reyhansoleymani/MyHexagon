@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="450.0" maxWidth="450.0" minHeight="450.0" minWidth="450.0" prefHeight="450.0" prefWidth="450.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.t2_hexagon.MyHistoryController">
+   <children>
+      <Pane layoutX="6.0" layoutY="9.0" prefHeight="83.0" prefWidth="430.0">
+         <children>
+            <Label layoutX="90.0" prefHeight="86.0" prefWidth="253.0" text="HISTORY" textAlignment="CENTER" textFill="#8d0000">
+               <font>
+                  <Font name="System Bold" size="59.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="378.0" layoutY="57.0" mnemonicParsing="false" onAction="#onBackButtonClick" style="-fx-background-color: #000000;" text="Back" textFill="#9a0000">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <HBox layoutX="42.0" layoutY="141.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #222021;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <ListView fx:id="historynameList" prefHeight="310.0" prefWidth="214.0" style="-fx-background-color: #222021; -fx-font-size: 14;" />
+            <ListView fx:id="historyrecordList" prefHeight="310.0" prefWidth="212.0" style="-fx-background-color: #222021; -fx-font-size: 14;" />
+            <ListView fx:id="historytimeList" prefHeight="310.0" prefWidth="184.0" style="-fx-background-color: #222021; -fx-font-size: 14;" />
+         </children>
+      </HBox>
+      <Label layoutX="20.0" layoutY="103.0" text="NAME:" textFill="#e40000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="169.0" layoutY="103.0" text="RECORD:" textFill="#b90000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="352.0" layoutY="103.0" text="DATE:" textFill="#b20000">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

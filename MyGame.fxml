@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane fx:id="pane" maxHeight="450.0" maxWidth="450.0" minHeight="450.0" minWidth="450.0" prefHeight="450.0" prefWidth="450.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.t2_hexagon.GameController">
+    <children>
+        <AnchorPane fx:id="playground" maxHeight="750.0" maxWidth="750.0" minHeight="750.0" minWidth="750.0" prefHeight="750.0" prefWidth="750.0">
+            <children>
+                <Polygon fx:id="p1" points="-43.3, 25.0, -43.3, -25.0,    -3637.2, -2100.0, -3637.2, 2100.0" stroke="BLACK" strokeType="INSIDE" />
+                <Polygon fx:id="p2" points="-43.3, -25.0, 0.0, -50.0,     0.0, -4200.0, -3637.2, -2100.0" stroke="BLACK" strokeType="INSIDE" />
+                <Polygon fx:id="p3" points="0.0, -50.0, 43.3, -25.0,      3637.2, -2100.0, 0.0, -4200.0" stroke="BLACK" strokeType="INSIDE" />
+                <Polygon fx:id="p4" points="43.3, -25.0, 43.3, 25.0,      3637.2, 2100.0, 3637.2, -2100.0" stroke="BLACK" strokeType="INSIDE" />
+                <Polygon fx:id="p6" points="-43.3, 25.0, 0.0, 50.0,       0.0, 4200.0, -3637.2, 2100.0" stroke="BLACK" strokeType="INSIDE" />
+                <Polygon fx:id="p5" points="0.0, 50.0, 43.3, 25.0,        3637.2, 2100.0, 0.0, 4200.0" stroke="BLACK" strokeType="INSIDE" />
+
+
+                <Polygon fx:id="polygon" disable="false" fill="#1fff67" mouseTransparent="false" pickOnBounds="true" points="0.0, -50.0, 43.3, -25.0, 43.3, 25.0, 0.0, 50.0, -43.3, 25.0, -43.3, -25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="8.0" />
+
+                <Polygon fx:id="mane1" points="0.0,-1260.0, 1091.16, -630.0,    872.928,-504, 0.0, -1008.87" stroke="BLACK" strokeType="INSIDE" />
+                <Polygon fx:id="mane2" points="1091.16,-630.0, 1091.16,630.0,    827.928,504,827.928,-504" stroke="BLACK" strokeType="INSIDE" />
+                <Polygon fx:id="mane3" points="1091.16,630.0, 0.0,1260.0,      0.0,1008,872.928,504" stroke="BLACK" strokeType="INSIDE" />
+
+                <Polygon fx:id="mane4" points="0.0,1260,-1091.16,630,         -872.928,504,0.0,1008" stroke="BLACK" strokeType="INSIDE" />
+                <Polygon fx:id="mane5" points="-1091.16,630,-1091.16,-630      ,-827.928,-504,-827.928,504" stroke="BLACK" strokeType="INSIDE" />
+                <Polygon fx:id="mane6" points="-1091.16,-630,0.0,-1260.0,    0.0,-1008,-827.928,-504" stroke="BLACK" strokeType="INSIDE" />
+            </children>
+        </AnchorPane>
+
+        <Pane fx:id="ground" maxHeight="750.0" maxWidth="750.0" minHeight="750.0" minWidth="750.0" prefHeight="750.0" prefWidth="750.0">
+            <children>
+                <Label fx:id="gameover" text="Game over!!!" textFill="RED" translateX="250.0" translateY="250.0" visible="false">
+                    <font>
+                        <Font name="System Bold" size="40.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <VBox alignment="TOP_CENTER">
+
+            <HBox alignment="CENTER" spacing="10.0" style="-fx-background-color: #222021;">
+                <Button fx:id="pause" onAction="#onPauseButtonClick" style="-fx-background-color: #222021; -fx-text-fill: #ff0000;" text="Pause">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+                <Button fx:id="resume" onAction="#onResumeButtonClick" prefHeight="1.0" prefWidth="70.0" style="-fx-background-color: #222021; -fx-text-fill: #ff0000;" text="Resume" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+                <Button fx:id="back" onAction="#onBackButtonClick" prefHeight="15.0" prefWidth="50.0" style="-fx-background-color: #222021; -fx-text-fill: #ff0000;" text="Back" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Label fx:id="bestscore" text="Score" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="time" text="Time:" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            </HBox>
+        </VBox>
+    </children>
+</StackPane>

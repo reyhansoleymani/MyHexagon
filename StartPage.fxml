@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="450.0" maxWidth="450.0" minHeight="450.0" minWidth="450.0" prefHeight="450.0" prefWidth="450.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.t2_hexagon.StartGameController">
+   <children>
+      <HBox layoutY="102.0" prefHeight="164.0" prefWidth="297.0" style="-fx-background-color: #222021;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="250.0">
+         <children>
+            <Button id="start" fx:id="start" mnemonicParsing="false" onAction="#onStartButtonClick" prefHeight="67.0" prefWidth="177.0" style="-fx-background-color: #222021;" text="START" textFill="RED" translateY="50.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+            <TextField id="name" fx:id="inputField" onAction="#nameBox" prefHeight="68.0" prefWidth="291.0" translateX="-10.0" translateY="50.0" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis></TextField>
+         </children>
+      </HBox>
+      <Pane layoutX="23.0" layoutY="14.0" prefHeight="204.0" prefWidth="410.0" AnchorPane.bottomAnchor="231.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <Label layoutX="70.0" layoutY="20.0" text="START GAME" textFill="#ee0000">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+               <padding>
+                  <Insets right="30.0" />
+               </padding>
+            </Label>
+            <Button id="back" fx:id="back" layoutX="359.0" layoutY="61.0" mnemonicParsing="false" onAction="#onBackButtonClick" style="-fx-background-color: #000000;" text="Back" textFill="#9a0000">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </Button>
+            <Label fx:id="error" layoutX="44.0" layoutY="160.0" text="write your name! " textFill="#eb0000">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
